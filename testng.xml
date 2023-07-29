@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="G:/Java WorkSpace/seleniumRevision">
+        <classes>
+            <class name="testNG.dependencyTest">
+                <methods>
+                    <include name="startCar"/>
+                </methods>
+            </class>
+            <class name="testNG.firstTestCase">
+                <methods>
+                    <include name="setup"/>
+                    <include name="login"/>
+                    <include name="teerDown"/>
+                    <include name="testfour"/>
+                    <include name="testfive"/>
+                    <include name="testsix"/>
+                </methods>
+            </class>
+            <class name="testNG.secondTestCase">
+                <methods>
+                    <include name="addCustomer"/>
+                    <include name="searchCustomer"/>
+                    <include name="deleteCustomer"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
